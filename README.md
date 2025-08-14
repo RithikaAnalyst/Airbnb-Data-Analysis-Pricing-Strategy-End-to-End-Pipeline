@@ -165,7 +165,8 @@ df['month']=df['last_reviewdate'].dt.month
 ### Most listings price under 500
 ![Most listings price under 500](Most listings priced under $500.png)
 
-![KPIs]()
-
+### KPIs
+![KPIs](KPIs.png)
+### Map of listings by neighrhood
 ![Map of listings by neighrhood](Map of listings by neighborhood.png)
 
