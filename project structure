@@ -1,0 +1,11 @@
+📂 Airbnb_Data_Analysis
+ ├── 📄 Airbnb_Open_Data.csv              # Raw dataset
+ ├── 📄 airbnb_analysis.sql               # SQL queries
+ ├── 📄 airbnb_analysis.py                # Python analysis script
+ ├── 📄 Airbnb_Open_Data.xlsx             # Cleaned dataset
+ ├── 📄 airbnb powerBI dashboard.pbix     # Power BI dashboard
+ ├── 📂 images                            # Dashboard preview images
+ │    ├── powerbi_summary.png
+ │    ├── powerbi_trends.png
+ │    └── powerbi_profit.png
+ └── 📄 README.md                         # Project documentation
