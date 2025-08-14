@@ -166,5 +166,5 @@ df['month']=df['last_reviewdate'].dt.month
 ### KPIs
 ![KPIs](KPIs.png)
 ### Map of listings by neighrhood
-![Map of listings by neighrhood](Executive_Summary_dasboard.png)
+![Map of listings by neighrhood](https://github.com/RithikaAnalyst/Airbnb_data_analysis_project/blob/main/Map%20of%20listings%20by%20neighborhood.png)
 
