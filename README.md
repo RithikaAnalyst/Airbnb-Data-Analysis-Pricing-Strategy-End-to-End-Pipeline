@@ -152,9 +152,83 @@ df['last_reviewdate']=df['last_reviewdate'].fillna(df['last_reviewdate'].min())
 
 # Extract month from last review date
 df['month']=df['last_reviewdate'].dt.month
-```
-## PowerBI Dashboard
 
+
+# Price Distribution (Remove Outliers for Clarity)
+
+plt.figure(figsize=(10, 6))
+sns.histplot(df[df['price'] < 500]['price'], bins=50, kde=True)
+plt.title("Price Distribution of Airbnb Listings (< $500)")
+plt.xlabel("Price (USD)")
+plt.ylabel("Number of Listings")
+plt.show()
+
+#  Top 10 Most Expensive Neighborhoods
+top_neighbourhoods = (
+    df.groupby("neighbourhood")["price"]
+    .median()
+    .sort_values(ascending=False)
+    .head(10)
+)
+
+plt.figure(figsize=(10, 6))
+top_neighbourhoods.plot(kind="bar", color="skyblue")
+plt.title("Top 10 Most Expensive Neighborhoods (Median Price)")
+plt.ylabel("Median Price (USD)")
+plt.xticks(rotation=45)
+plt.show()
+
+#  Monthly Review Trends
+monthly_trend = (
+    df.groupby('month')["id"]
+    .count()
+    .rename("listing_count")
+)
+
+plt.figure(figsize=(10, 6))
+monthly_trend.plot(marker='o')
+plt.title("Number of Listings Reviewed per Month")
+plt.xlabel("Month")
+plt.ylabel("Listings Reviewed")
+plt.grid(True)
+plt.show()
+
+#  Price Correlation Heatmap
+plt.figure(figsize=(8, 5))
+numeric_cols = df.select_dtypes(include='number')
+sns.heatmap(numeric_cols.corr(), annot=True, cmap="coolwarm", fmt=".2f")
+plt.title("Correlation Heatmap")
+plt.show()
+
+
+# ------------------------------------------------------------
+# Insights
+# ------------------------------------------------------------
+print("\n Key Insights:")
+print("- Most listings are priced below $500; a few outliers skew the data.")
+print("- The most expensive neighborhoods (median price) are concentrated in luxury areas.")
+print("- There is a seasonal pattern in review activity, peaking around certain months.")
+print("- Price is moderately correlated with number of reviews and availability.")
+
+
+
+# --- MySQL Upload ---
+
+try:
+    engine = create_engine('mysql+pymysql://root:newpassword123@localhost/Airbnb_Data_Analysis_Project')
+
+    df.to_sql('airbnb_listings', con=engine, if_exists='replace', index=False)
+
+    print("Successfully uploaded to MySQL")
+
+except Exception as e:
+    print("Upload to MySQL failed!")
+    print(f"Error: {e}")
+
+df.to_excel("Airbnb_Open_Data.xlsx", sheet_name="New_Sheet", index=False)
+```
+
+## PowerBI Dashboard
 ### Executive Summary
 - KPIs: Total Listings, Avg Price, Highest Price, Review Score
 - Map of listings by neighborhood
