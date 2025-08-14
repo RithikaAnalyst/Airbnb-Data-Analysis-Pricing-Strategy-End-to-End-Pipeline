@@ -161,12 +161,10 @@ df['month']=df['last_reviewdate'].dt.month
 - Room type distribution
 - Top 10 neighborhoods by avg price
 ![Executive Summary Dashboard](Executive_Summary_dasboard.png)
-
 ### Most listings price under 500
-![Most listings price under 500](Most listings priced under $500.png)
-
+![Executive Summary Dashboard](Executive_Summary_dasboard.png)
 ### KPIs
 ![KPIs](KPIs.png)
 ### Map of listings by neighrhood
-![Map of listings by neighrhood](Map of listings by neighborhood.png)
+![Executive Summary Dashboard](Executive_Summary_dasboard.png)
 
