@@ -162,7 +162,8 @@ df['month']=df['last_reviewdate'].dt.month
 - Top 10 neighborhoods by avg price
 ![Executive Summary Dashboard](Executive_Summary_dasboard.png)
 
-!![Most listings price under 500]()
+### Most listings price under 500
+![Most listings price under 500](Most listings priced under $500.png)
 
 ![KPIs]()
 
