@@ -8,19 +8,6 @@ This project performs **Airbnb Listings Data Analysis** using:
 
 The goal is to provide **actionable insights** for pricing strategies, location targeting, and seasonal demand patterns.
 
-## 📂 Airbnb_Data_Analysis
- ├── 📄 Airbnb_Open_Data.csv              # Raw dataset
- ├── 📄 airbnb_analysis.sql               # SQL queries
- ├── 📄 airbnb_analysis.py                # Python analysis script
- ├── 📄 Airbnb_Open_Data.xlsx             # Cleaned dataset
- ├── 📄 airbnb powerBI dashboard.pbix     # Power BI dashboard
- ├── 📂 images                            # Dashboard preview images
- │    ├── powerbi_summary.png
- │    ├── powerbi_trends.png
- │    └── powerbi_profit.png
- └── 📄 README.md                         # Project documentation
-
-
 ---
 
 ## 📂 Dataset
@@ -174,7 +161,10 @@ df['month']=df['last_reviewdate'].dt.month
 - Room type distribution
 - Top 10 neighborhoods by avg price
 ![Executive Summary Dashboard](Executive_Summary_dasboard.png)
+
 !![Most listings price under 500]()
+
 ![KPIs]()
-![Map of listings by neighrhood]()
+
+![Map of listings by neighrhood](Map of listings by neighborhood.png)
 
