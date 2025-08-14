@@ -227,6 +227,15 @@ except Exception as e:
 
 df.to_excel("Airbnb_Open_Data.xlsx", sheet_name="New_Sheet", index=False)
 ```
+## Python Visualization
+### price distribution of airbnb listners <500
+![price distribution of airbnb listners <500](<img width="1504" height="1003" alt="price distribution of airbnb listners" src="https://github.com/user-attachments/assets/a6b6ed49-45d9-4a49-81f5-547abc23fcde" />
+### top 10 most expansive neighours
+![top 10 most expansive neighours](<img width="1504" height="1003" alt="top 10 most expansive neighours" src="https://github.com/user-attachments/assets/72c63a37-6df5-4420-a3a9-59d3e9ba4fb9" />
+### Number of listings reviews per month
+![Number of listings reviews per month](<img width="1504" height="1003" alt="Number of listings reviews per month" src="https://github.com/user-attachments/assets/2bdbf95e-6a68-4f0d-8f45-451e5fa82729" />
+### correlation heatmap
+![correlation heatmap](<img width="1920" height="1008" alt="correlation heatmap" src="https://github.com/user-attachments/assets/8c70c6e8-4ec7-490d-95f5-ca1c4cd637ce" />
 
 ## PowerBI Dashboard
 ### Executive Summary
