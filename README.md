@@ -162,9 +162,9 @@ df['month']=df['last_reviewdate'].dt.month
 - Top 10 neighborhoods by avg price
 ![Executive Summary Dashboard](Executive_Summary_dasboard.png)
 ### Most listings price under 500
-![Executive Summary Dashboard](Executive_Summary_dasboard.png)
+![Most listings price under 500](https://github.com/RithikaAnalyst/Airbnb_data_analysis_project/blob/main/Most%20listings%20priced%20under%20%24500.png)
 ### KPIs
 ![KPIs](KPIs.png)
 ### Map of listings by neighrhood
-![Executive Summary Dashboard](Executive_Summary_dasboard.png)
+![Map of listings by neighrhood](Executive_Summary_dasboard.png)
 
