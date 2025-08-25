@@ -238,7 +238,7 @@ df.to_excel("Airbnb_Open_Data.xlsx", sheet_name="New_Sheet", index=False)
 ![correlation heatmap](<img width="1920" height="1008" alt="correlation heatmap" src="https://github.com/user-attachments/assets/8c70c6e8-4ec7-490d-95f5-ca1c4cd637ce" />
 
 ## PowerBI Dashboard
-[PowerBI Link](https://rithikaramalingam3.wixsite.com/data-analyst-hub)
+[PowerBI Link](https://app.powerbi.com/groups/me/reports/5a314f61-b744-479d-b30f-15e2432d9aaa/21f1bfd3089d5e63cee6?experience=power-bi)
 
 ### Executive Summary
 - KPIs: Total Listings, Avg Price, Highest Price, Review Score
