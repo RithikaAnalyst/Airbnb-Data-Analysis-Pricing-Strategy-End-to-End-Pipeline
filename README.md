@@ -243,11 +243,10 @@ df.to_excel("Airbnb_Open_Data.xlsx", sheet_name="New_Sheet", index=False)
 - Map of listings by neighborhood
 - Room type distribution
 - Top 10 neighborhoods by avg price
-![Executive Summary Dashboard](Executive_Summary_dasboard.png)
+![Executive Summary Dashboard](https://github.com/RithikaAnalyst/Airbnb_data_analysis_project/blob/main/dashboard%20(2).png)
 ### Most listings price under 500
 ![Most listings price under 500](https://github.com/RithikaAnalyst/Airbnb_data_analysis_project/blob/main/Most%20listings%20priced%20under%20%24500.png)
 ### KPIs
 ![KPIs](KPIs.png)
-### Map of listings by neighrhood
-![Map of listings by neighrhood](https://github.com/RithikaAnalyst/Airbnb_data_analysis_project/blob/main/Map%20of%20listings%20by%20neighborhood.png)
+
 
